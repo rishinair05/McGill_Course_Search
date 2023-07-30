@@ -1,0 +1,15 @@
+name: course_search_environment
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.7
+  - conda-forge::faiss
+  - conda-forge::sentence-transformers
+  - conda-forge::pickle5
+  - numpy
+  - pandas
+  - pip
+  - pip:
+    - streamlit-analytics
+    - faiss-cpu

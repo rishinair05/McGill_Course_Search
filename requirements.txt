@@ -1,7 +1,0 @@
-faiss
-pickle
-pandas
-numpy
-sentence-transformers
-streamlit_analytics
-streamlit
