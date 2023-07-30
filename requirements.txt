@@ -1,5 +1,4 @@
 faiss-cpu
-pickle
 pandas
 numpy
 sentence-transformers
