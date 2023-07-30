@@ -1,9 +1,9 @@
 name: course_search_environment
 channels:
-  - anaconda
   - conda-forge
   - defaults
 dependencies:
+  - python=3.10.9
   - conda-forge::faiss
   - conda-forge::sentence-transformers
   - conda-forge::pickle5
