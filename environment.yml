@@ -12,4 +12,3 @@ dependencies:
   - pip
   - pip:
     - streamlit-analytics
-    - faiss-cpu
