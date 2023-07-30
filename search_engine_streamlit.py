@@ -1,5 +1,5 @@
 import streamlit as st
-#import streamlit_analytics
+import streamlit_analytics
 import numpy as np
 import faiss
 from sentence_transformers import SentenceTransformer
@@ -65,8 +65,8 @@ st.write("You can enter your query as words or sentences. (e.g., 'Courses on Mac
 st.write("Change the value on the left to return more or less search results.")
 
 #Search Input
-#with streamlit_analytics.track(unsafe_password="#UDf2uFNDU$ud#bf"): #remove the password when uploading
-search_query = st.text_input("Enter a qeury to search courses", value="", max_chars=None, key=None, type="default")
+with streamlit_analytics.track(unsafe_password="#UDf2uFNDU$ud#bf"): #remove the password when uploading
+    search_query = st.text_input("Enter a qeury to search courses", value="", max_chars=None, key=None, type="default")
 
 #Search Output
 if search_query != "":

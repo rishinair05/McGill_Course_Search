@@ -1,0 +1,9 @@
+name: environment
+dependencies:
+  - numpy
+  - pandas
+  - faiss
+  - pickle
+  - pip
+  - pip:
+    - streamlit-analytics
