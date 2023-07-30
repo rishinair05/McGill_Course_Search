@@ -1,5 +1,6 @@
 name: course_search_environment
 channels:
+  - anaconda
   - conda-forge
   - defaults
 dependencies:
@@ -11,3 +12,4 @@ dependencies:
   - pip
   - pip:
     - streamlit-analytics
+    - faiss
