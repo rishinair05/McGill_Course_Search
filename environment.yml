@@ -1,8 +1,10 @@
 name: environment
+channels:
+  - conda-forge
 dependencies:
   - numpy
   - pandas
-  - conda-forge::faiss*
+  - conda-forge::faiss
   - pickle
   - pip
   - pip:
