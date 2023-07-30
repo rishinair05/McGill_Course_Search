@@ -1,11 +1,13 @@
-name: environment
+name: course_search_environment
 channels:
   - conda-forge
+  - defaults
 dependencies:
+  - conda-forge::faiss
+  - conda-forge::sentence-transformers
+  - conda-forge::pickle5
   - numpy
   - pandas
-  - conda-forge::faiss
-  - pickle
   - pip
   - pip:
     - streamlit-analytics
