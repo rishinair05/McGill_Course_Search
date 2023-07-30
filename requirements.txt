@@ -1,4 +1,4 @@
-faiss
+faiss-cpu
 pickle
 pandas
 numpy
