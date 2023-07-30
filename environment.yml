@@ -2,7 +2,7 @@ name: environment
 dependencies:
   - numpy
   - pandas
-  - faiss
+  - conda-forge::faiss
   - pickle
   - pip
   - pip:
