@@ -1,6 +1,3 @@
 faiss-cpu
-pandas
-numpy
 sentence-transformers
 streamlit_analytics
-streamlit
