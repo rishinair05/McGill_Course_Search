@@ -62,15 +62,20 @@ st.write("Disclaimer: This is not an official McGill tool. This software was dev
 
 st.write("You can enter your query as words or sentences. (e.g., 'Courses on Machine Learning', 'Newton's Method', 'Pizza', 'Metallica', etc.)")
 
+st.write("Note that the embedding model used in this code can sometimes overlook important keywords.\
+         If you already know the course code and/or title, it may be better to use the official McGill course search engine available at https://www.mcgill.ca/study/2023-2024/courses/search.")
+
 st.write("Change the value on the left to return more or less search results.")
 
 #Search Input
 with streamlit_analytics.track(unsafe_password="#UDf2uFNDU$ud#bf"): #remove the password when uploading
-    search_query = st.text_input("Enter a qeury to search courses", value="", max_chars=None, key=None, type="default")
+    search_query = st.text_input("Enter a query to search courses", value="", max_chars=None, key=None, type="default")
 
 #Search Output
 if search_query != "":
     courseSearch(number_of_results, search_query)
 
 st.caption("Author: Rishi Nair")
-st.caption("Search Engine Analytics: http://localhost:8501/?analytics=on")
+st.caption("If you encounter any issues or you have any suggestions, please email rishi.nair(AT)mail.mcgill.ca\
+           or file an issue on the github repository at https://github.com/rishinair05/McGill_Course_Search. If you have found this tool useful, feel free to star the github repository. Cheers, Rishi.")
+st.caption("Search Engine Analytics: https://huggingface.co/spaces/rishinair05/McGill_Course_Search?analytics=on")
