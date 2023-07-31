@@ -68,7 +68,7 @@ st.write("Note that the embedding model used in this code can sometimes overlook
 st.write("Change the value on the left to return more or less search results.")
 
 #Search Input
-with streamlit_analytics.track(unsafe_password="#UDf2uFNDU$ud#bf"): #remove the password when uploading
+with streamlit_analytics.track(unsafe_password=""): #remove the password when uploading
     search_query = st.text_input("Enter a query to search courses", value="", max_chars=None, key=None, type="default")
 
 #Search Output
