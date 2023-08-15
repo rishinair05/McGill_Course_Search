@@ -5,6 +5,7 @@ import faiss
 from sentence_transformers import SentenceTransformer
 import pickle
 import pandas
+import os
 
 encoder = SentenceTransformer("all-mpnet-base-v2")
 #Importing index and datframe from pickles
@@ -56,8 +57,8 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.write("Disclaimer: This is not an official McGill tool. This software was developed\
-          as a part of a research project on semantic/vector search engines by Rishi Nair (McGill '27). This search engine\
+st.write("Disclaimer: This is not an official McGill tool. This experimental utility was developed\
+          as a part of a summer project on semantic/vector search engines by Rishi Nair (McGill '27). This search engine\
          uses the SBERT 'all-mpnet-base-v2' sentence transformer model, and the FAISS library developed by Facebook.")
 
 st.write("You can enter your query as words or sentences. (e.g., 'Courses on Machine Learning', 'Newton's Method', 'Pizza', 'Metallica', etc.)")
@@ -68,7 +69,9 @@ st.write("Note that the embedding model used in this code can sometimes overlook
 st.write("Change the value on the left to return more or less search results.")
 
 #Search Input
-with streamlit_analytics.track(unsafe_password=""): #remove the password when uploading
+analytics_password = os.getenv("analytics_password")
+
+with streamlit_analytics.track(unsafe_password=analytics_password): #remove the password when uploading
     search_query = st.text_input("Enter a query to search courses", value="", max_chars=None, key=None, type="default")
 
 #Search Output

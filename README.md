@@ -1,6 +1,6 @@
 # The (Unofficial) McGill Course Searcher
 
-Disclaimer: This is not an official McGill tool. This software was developed as a part of a research project on semantic/vector search engines by Rishi Nair (McGill '27). This search engine uses the SBERT 'all-mpnet-base-v2' sentence transformer model, and the FAISS library developed by Facebook.
+Disclaimer: This is not an official McGill tool. This experimental utility was developed as a part of a summer project on semantic/vector search engines by Rishi Nair (McGill '27). This search engine uses the SBERT 'all-mpnet-base-v2' sentence transformer model, and the FAISS library developed by Facebook.
 
 You can access this app at https://huggingface.co/spaces/rishinair05/McGill_Course_Search.
 
